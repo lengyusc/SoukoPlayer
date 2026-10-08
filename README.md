@@ -8,7 +8,7 @@
 
 <p align="center">
   <b>🤖 Android</b> &nbsp;|&nbsp; 
-  <b>☁️ Navidrome / </b> &nbsp;|&nbsp; 
+  <b>☁️ Navidrome </b> &nbsp;|&nbsp; 
   <b>🎯 Kotlin</b> &nbsp;|&nbsp; 
   <b>📄 MIT License</b> &nbsp;|&nbsp; 
   <a href="https://github.com/lengyusc/SoukoPlayer/releases"><b>📥 Download APK</b></a>
