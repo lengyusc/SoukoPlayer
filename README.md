@@ -36,13 +36,13 @@
 ## 📸 应用截图 (Screenshots)
 
 
-| 播放界面 | 曲目列表 | 专辑列表 |
-| :---: | :---: | :---: |
-| <img width="1216" height="2640" alt="Screenshot_20261008_161904" src="https://github.com/user-attachments/assets/76872573-5fcd-4c3a-8076-8a4bffcaab02" />
-| <img width="1216" height="2640" alt="Screenshot_20261008_161855" src="https://github.com/user-attachments/assets/f8271987-7749-4633-b9a9-df580aaffd4c" />
-| <img width="1216" height="2640" alt="Screenshot_20261008_161826" src="https://github.com/user-attachments/assets/8a73be81-90c9-4196-a4c0-14438aad55a1" />
+界面 
 
----
+<img width="1216" height="2640" alt="Screenshot_20261008_161919" src="https://github.com/user-attachments/assets/2a3ed802-00e7-4c85-899b-001fe36bb262" />
+<img width="1216" height="2640" alt="Screenshot_20261008_161904" src="https://github.com/user-attachments/assets/da938dd7-2589-40c1-912c-a52b961c9baf" />
+<img width="1216" height="2640" alt="Screenshot_20261008_161855" src="https://github.com/user-attachments/assets/d5f469d3-315c-4877-8e5a-b15d33e65abe" />
+<img width="1216" height="2640" alt="Screenshot_20261008_161826" src="https://github.com/user-attachments/assets/8c9f43ad-f8c7-4b7d-86fc-e0db872d8c93" />
+
 
 ## 🛠️ 技术栈 (Tech Stack)
 
