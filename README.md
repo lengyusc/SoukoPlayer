@@ -1,7 +1,7 @@
 # 🎵 SoukoPlayer
 
 <p align="center">
-  <b>A lightweight, clean, and high-performance Navidrome & Subsonic player for Android.</b>
+  <b>A lightweight, clean, and high-performance Navidrome player for Android.</b>
   <br />
   一款专为 Navidrome 自建音乐服务打造的轻量、高效 Android 客户端。
 </p>
