@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.org/badge/Platform-Android-3DDC84" alt="Platform" />
-  <img src="https://img.shields.org/badge/Server-Navidrome_%2F_Subsonic-007ACC" alt="Server" />
-  <img src="https://img.shields.org/badge/Language-Kotlin-7F52FF" alt="Language" />
-  <img src="https://img.shields.org/badge/License-MIT-blue" alt="License" />
+  <b>🤖 Android</b> &nbsp;|&nbsp; 
+  <b>☁️ Navidrome / Subsonic</b> &nbsp;|&nbsp; 
+  <b>🎯 Kotlin</b> &nbsp;|&nbsp; 
+  <b>📄 MIT License</b>
 </p>
 
 ---
