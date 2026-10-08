@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SoukoPlayer</string>
+    <string name="track_number">%d</string>
+    <string name="play">播放</string>
+    <string name="album_count">专辑总数: %d</string>
+    <string name="unknown_title">未知标题</string>
+    <string name="track_index">%d</string>
+    <string name="configure_server_first">请先配置服务器信息</string>
+    <string name="search_failed">搜索失败: %s</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="playing_track">播放: %s</string>
+    <string name="artist_name">艺术家: %s</string>
+</resources>

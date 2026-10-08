@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9121212"> <!-- 85% 透明度暗色毛玻璃质感底色 -->
+
+    <!-- 横屏采用左右分栏容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- 左侧：封面 + 歌曲信息 + 紧凑型 LED 频谱 -->
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            tools:ignore="RtlSymmetry">
+
+            <!-- 专辑封面（点击左上角封面直接返回） -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivBigCover"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+            <!-- 歌曲标题 -->
+            <TextView
+                android:id="@+id/tvTrackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 歌手名称 -->
+            <TextView
+                android:id="@+id/tvArtistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="#B3FFFFFF"
+                android:textSize="13sp" />
+
+            <!-- 1. 增加弹簧占位，把 LED 频谱优雅地压到最下方 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- 2. LED 频谱：取消 layout_weight，改为固定适中的高度与宽度 -->
+            <com.souko.soukoplayer.LEDSpectrumView
+                android:id="@+id/ledSpectrumView"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- 右侧：大面积歌词滚动列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLyrics"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+</FrameLayout>

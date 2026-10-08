@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerControlWidget"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="#F8F8F8"
+    android:elevation="2dp">
+
+    <!-- 播放信息和控制按钮合并在一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+
+        <!-- 播放信息 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/tvNowPlayingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正在播放歌曲"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/tvNowPlayingArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="歌手名"
+                android:textSize="10sp"
+                android:textColor="#666666"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <!-- 播放按钮 - 缩小尺寸 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- 新增 MEGA BASS 按钮 -->
+            <ImageButton
+                android:id="@+id/btnMegaBass"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bass_off"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:padding="2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_souko_prev"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_souko_play"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginHorizontal="6dp" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_souko_next"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <!-- 循环按钮 -->
+            <ImageButton
+                android:id="@+id/btnRepeat"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_list_loop"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 进度条 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvCurTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="9sp"
+            android:layout_marginEnd="4dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="2dp"
+            android:maxHeight="2dp" />
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="9sp"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+</LinearLayout>

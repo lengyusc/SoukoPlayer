@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 服务器地址 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器地址"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/etServerUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="http://your.navidrome.server"
+                android:inputType="textUri"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginTop="4dp"/>
+
+            <!-- 用户名 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginTop="4dp"/>
+
+            <!-- 密码 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginTop="4dp"/>
+
+            <!-- 保存按钮 -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="保存"
+                android:layout_marginTop="24dp"/>
+
+            <!-- 返回按钮 -->
+            <Button
+                android:id="@+id/btnBackToAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="返回"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Logo和版权信息区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#FAFAFA">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/souko_player"
+            android:contentDescription="Souko Player Logo"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- 版权信息 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="©2026 Souko Studio"
+            android:textSize="9sp"
+            android:textColor="#666666"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"/>
+
+        <!-- 感谢信息 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Thanks to 明月"
+            android:textSize="9sp"
+            android:textColor="#666666"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"/>
+    </LinearLayout>
+</LinearLayout>
