@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.org/badge/Platform-Android-green.svg" alt="Platform" />
-  <img src="https://img.shields.org/badge/Server-Navidrome%20%2F%20Subsonic-blue.svg" alt="Server" />
-  <img src="https://img.shields.org/badge/Language-Kotlin-orange.svg" alt="Language" />
-  <img src="https://img.shields.org/badge/License-MIT-blue.svg" alt="License" />
+  <img src="https://img.shields.org/badge/Platform-Android-green" alt="Platform" />
+  <img src="https://img.shields.org/badge/Server-Navidrome%20%2F%20Subsonic-blue" alt="Server" />
+  <img src="https://img.shields.org/badge/Language-Kotlin-orange" alt="Language" />
+  <img src="https://img.shields.org/badge/License-MIT-blue" alt="License" />
 </p>
 
 ---
