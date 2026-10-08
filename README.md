@@ -10,7 +10,8 @@
   <b>🤖 Android</b> &nbsp;|&nbsp; 
   <b>☁️ Navidrome / Subsonic</b> &nbsp;|&nbsp; 
   <b>🎯 Kotlin</b> &nbsp;|&nbsp; 
-  <b>📄 MIT License</b>
+  <b>📄 MIT License</b> &nbsp;|&nbsp; 
+  <a href="https://github.com/lengyusc/SoukoPlayer/releases"><b>📥 Download APK</b></a>
 </p>
 
 ---
